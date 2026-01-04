@@ -57,6 +57,7 @@
     "eslint-plugin-storybook": "^10.1.11",
     "glob": "^13.0.0",
     "globals": "^17.0.0",
+    "husky": "^9.1.7",
     "playwright": "^1.57.0",
     "prettier": "^3.7.4",
     "react": "^19.2.3",
