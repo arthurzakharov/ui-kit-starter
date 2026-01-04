@@ -1,0 +1,6 @@
+.github
+.changeset
+.idea
+coverage
+dist
+node_modules

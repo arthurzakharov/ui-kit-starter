@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #555ab9;
+  color: #eeeeee;
+}

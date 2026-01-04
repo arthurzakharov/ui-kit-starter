@@ -1,0 +1,9 @@
+#! /bin/bash
+# Run tests before committing
+npm run test:once
+# Run linting before committing
+npm run lint:check
+# Run prettier before committing
+npm run prettier:check
+# Run build before committing
+npm run build

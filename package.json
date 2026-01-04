@@ -1,0 +1,71 @@
+{
+  "name": "@arthurzakharov/ui-kit-starter",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthurzakharov/ui-kit-starter"
+  },
+  "author": {
+    "name": "arthurzakharov",
+    "email": "zakharov.arthur@icloud.com",
+    "url": "https://github.com/arthurzakharov"
+  },
+  "scripts": {
+    "build": "tsc && vite build --logLevel info",
+    "lint:check": "eslint . --ext ts,tsx",
+    "lint:fix": "eslint . --fix",
+    "prettier:check": "prettier --check --log-level=log .",
+    "prettier:fix": "prettier --write --log-level=log .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test:once": "vitest run --project=storybook",
+    "test:watch": "vitest --project=storybook",
+    "test:coverage": "vitest run --coverage --project=storybook",
+    "prepublish": "npm run build",
+    "release-patch": "npm run build && npm version patch && git push && git push --tags && npm publish",
+    "chromatic": "npx chromatic --project-token=chpt_6af6a89e1305914",
+    "prepare": "husky"
+  },
+  "peerDependencies": {
+    "react": "^19.2.3"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.1.3",
+    "@storybook/addon-a11y": "^10.1.11",
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/addon-vitest": "^10.1.11",
+    "@storybook/react-vite": "^10.1.11",
+    "@types/node": "^24.1.0",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@typescript-eslint/eslint-plugin": "^8.51.0",
+    "@typescript-eslint/parser": "^8.51.0",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/browser-playwright": "^4.0.16",
+    "@vitest/coverage-v8": "^4.0.16",
+    "chromatic": "^13.3.4",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "eslint-plugin-storybook": "^10.1.11",
+    "glob": "^13.0.0",
+    "globals": "^17.0.0",
+    "playwright": "^1.57.0",
+    "prettier": "^3.7.4",
+    "react": "^19.2.3",
+    "storybook": "^10.1.11",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.51.0",
+    "vite": "^7.3.0",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-lib-inject-css": "^2.2.2",
+    "vitest": "^4.0.16"
+  }
+}
